@@ -27,9 +27,9 @@ export const Navbar = () => {
         </nav>
         <Logo/>
         <nav className='flex items-center gap-5'>
-            <motion.a href='https://linkedin.com' target={'_blank'} whileHover={{y: -2}} whileTap={{scale: 0.8}}><LinkedInIcon/></motion.a>
-            <motion.a href='https://twitter.com' target={'_blank'} whileHover={{y: -2}} whileTap={{scale: 0.8}}><TwitterIcon/></motion.a>
-            <motion.a href='https://github.com' target={'_blank'} whileHover={{y: -2}} whileTap={{scale: 0.8}}><GithubIcon/></motion.a>
+            <motion.a href='https://linkedin.com' target={'_blank'} whileHover={{y: -5}} whileTap={{scale: 0.8}}><LinkedInIcon/></motion.a>
+            <motion.a href='https://twitter.com' target={'_blank'} whileHover={{y: -5}} whileTap={{scale: 0.8}}><TwitterIcon/></motion.a>
+            <motion.a href='https://github.com' target={'_blank'} whileHover={{y: -5}} whileTap={{scale: 0.8}}><GithubIcon/></motion.a>
         </nav>
     </header>
   )
