@@ -1,8 +1,36 @@
 import { AnimatedText } from '@/components/AnimatedText'
 import { Layout } from '@/components/Layout'
 import Head from 'next/head'
+import Image from 'next/image'
+import dynasty from '../../public/images/profile/dynasty.png';
+import { useEffect, useRef } from 'react';
+import { useInView, useMotionValue, useSpring } from 'framer-motion';
+import { Skill } from '@/components/Skill';
 
 export default function About() {
+
+  const AnimatedNumbers=({value})=>{
+    const ref = useRef(null);
+    const motionValue = useMotionValue(0);
+    const springValue = useSpring(motionValue, {duration: 3000});
+    const isInView = useInView(ref)
+
+    useEffect(()=>{
+      if(isInView){
+        motionValue.set(value)
+      }
+    },[isInView, value, motionValue]);
+
+    useEffect(()=>{
+      springValue.on("change", (latest)=>{
+        if(ref.current && latest.toFixed(0) <= value){
+          ref.current.textContent = latest.toFixed(0);
+        }
+      })
+    },[springValue, value])
+
+    return <span ref={ref}></span>
+  }
   return (
     <>
       <Head>
@@ -28,7 +56,27 @@ export default function About() {
               other digital product, I bring my commitment to design excellence and user-centered thinking to 
               every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.</p>
             </div>
+            <div className='relative col-span-3 bg-dark rounded-[2rem] p-8 w-[80%] h-[95%] top-8 left-5'>
+              <div className='w-[98%] h-[98%] bg-light rounded-2xl p-8 border-2 border-dark absolute -top-1 -left-1'>
+                <Image src={dynasty} alt='Dynasty image' className='w-full h-[100%] rounded-2xl bg-dark'/>
+              </div>
+            </div>
+            <div className='col-span-2 flex items-end justify-between flex-col'>
+                <div className='flex flex-col items-end justify-center'>
+                <span className='text-7xl font-bold'><AnimatedNumbers value={50}/>+</span>
+                  <h2 className='text-xl capitalize font-medium text-dark/75'>satisfield clients</h2>
+                </div>
+                <div className='flex flex-col items-end justify-center'>
+                <span className='text-7xl font-bold'><AnimatedNumbers value={40}/>+</span>
+                  <h2 className='text-xl capitalize font-medium text-dark/75'>completed projects</h2>
+                </div>
+                <div className='flex flex-col items-end justify-center'>
+                <span className='text-7xl font-bold'><AnimatedNumbers value={2}/>+</span>
+                  <h2 className='text-xl capitalize font-medium text-dark/75'>years of experience</h2>
+                </div>
+              </div>
           </div>
+          <Skill/>
         </Layout>
       </main>
     </>
