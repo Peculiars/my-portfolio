@@ -6,6 +6,7 @@ import dynasty from '../../public/images/profile/dynasty.png';
 import { useEffect, useRef } from 'react';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import { Skill } from '@/components/Skill';
+import { Experience } from '@/components/Experience';
 
 export default function About() {
 
@@ -77,6 +78,7 @@ export default function About() {
               </div>
           </div>
           <Skill/>
+          <Experience/>
         </Layout>
       </main>
     </>
