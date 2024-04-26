@@ -7,6 +7,7 @@ import { useEffect, useRef } from 'react';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import { Skill } from '@/components/Skill';
 import { Experience } from '@/components/Experience';
+import { Certification } from '@/components/Certification';
 
 export default function About() {
 
@@ -79,6 +80,7 @@ export default function About() {
           </div>
           <Skill/>
           <Experience/>
+          <Certification/>
         </Layout>
       </main>
     </>

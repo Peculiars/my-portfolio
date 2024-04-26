@@ -1,17 +1,16 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import { LiIcon } from './LiIcon'
 
 export const ExpDetails = ({position, company, time, address, work}) => {
-  return (
-    <div className='w-[75%] mx-auto relative'>
-        <ul>
-            <li className='my-8 flex flex-col items-center justify-between w-[60%] mx-auto'>
-                <div>
-                    <h3 className=''>{position}&nbsp; @{company}</h3>
-                    <span>{time} | {address}</span>
-                    <p>{work}</p>
-                </div>
-            </li>
-        </ul>
-    </div>
+    const ref = useRef(null)
+  return (  
+    <li ref={ref} className='my-8 flex flex-col items-center justify-between w-[60%] mx-auto'>
+        <LiIcon reference={ref}/>
+        <div>
+            <h3 className='capitalize font-bold text-2xl'>{position}&nbsp; <span className='text-primary capitalize'>@{company}</span></h3>
+            <span className='capitalize text-dark/75 font-medium '>{time} | {address}</span>
+            <p className='font-medium w-full'>{work}</p>
+        </div>
+    </li>
   )
 }
