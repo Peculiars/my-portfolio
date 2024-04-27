@@ -4,7 +4,7 @@ import { GithubIcon } from '@/components/Icons'
 
 export const Project=({type, title, img, link, github})=>{
     return(
-      <article className='w-full flex flex-col items-start justify-center rounded-2xl border-2 border-dark p-6 bg-light shadow-2xl'>
+      <article className='relative w-full flex flex-col items-start justify-center rounded-3xl border-2 border-dark p-6 bg-light shadow-2xl'>
         <Link className='w-full cursor-pointer overflow-hidden rounded-lg' href={link} target='_blank'>
           <Image src={img} alt={title} />
         </Link>

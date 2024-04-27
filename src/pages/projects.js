@@ -23,7 +23,8 @@ export default function Projects() {
         <Layout className=''>
           <AnimatedText text='Imagination Trumps Knowledge!'/>
           <div className='grid grid-cols-12 gap-24 pt-10'>
-              <div className='col-span-12 rounded-3xl'>
+              <div className='relative col-span-12 rounded-3xl'>
+              <div className='absolute top-0 -right-4 z-1 w-[101.1%] h-[103%] rounded-[2.5rem] bg-dark'/>
                 <FeaturedProjects
                 title='Portfolio'
                 img={project1}
@@ -34,7 +35,8 @@ export default function Projects() {
                 type='Featured Project'
                 />
               </div>
-              <div className='col-span-6'>
+              <div className='relative col-span-6'>
+                    <div className='absolute top-0.5 -right-3 z-1 w-[101.7%] h-[102%] rounded-[2rem] bg-dark'/>
                     <Project
                     title='easybank Landing Page'
                     img={project4}
@@ -42,7 +44,8 @@ export default function Projects() {
                     github='/'
                     />
               </div>
-              <div className='col-span-6'>
+              <div className='relative col-span-6'>
+                    <div className='absolute top-0.5 -right-3 z-1 w-[101.7%] h-[102%] rounded-[2rem] bg-dark'/>
                     <Project
                     title='tindog Landing Page'
                     img={project6}
@@ -50,18 +53,19 @@ export default function Projects() {
                     github='/'
                     />
               </div>
-              <div className='col-span-12 rounded-3xl'>
+              <div className='relative col-span-12 rounded-3xl'>
+                <div className='absolute top-0 -right-4 z-1 w-[101.1%] h-[103%] rounded-[2.5rem] bg-dark'/> 
                 <FeaturedProjects
                 title='Responsive Admin Dashboard'
                 img={project2}
-                summary='A professional portfolio website using Next JS, Framer-motion, and TailwindCSS. It has smooth 
-                page transitions, cool background effects, unique design and it is mobile responsive.'
+                summary='A professional and responsive admin-dashboard, showcasing .'
                 link='/'
                 github='/'
                 type='Featured Project'
                 />
               </div>
-              <div className='col-span-6'>
+              <div className='relative col-span-6'>
+                    <div className='absolute top-0.5 -right-3 z-1 w-[101.7%] h-[102%] rounded-[2rem] bg-dark'/>
                     <Project
                     title='Meenah Fashion Store'
                     img={project3}
@@ -69,7 +73,8 @@ export default function Projects() {
                     github='/'
                     />
               </div>
-              <div className='col-span-6'>
+              <div className='relative col-span-6'>
+                    <div className='absolute top-0.5 -right-3 z-1 w-[101.7%] h-[102%] rounded-[2rem] bg-dark'/>
                     <Project
                     title='E-commerce Product Page'
                     img={project5}
