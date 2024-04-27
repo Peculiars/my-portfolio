@@ -1,12 +1,15 @@
 import Image from 'next/image'
 import Link from 'next/link';
 import { GithubIcon } from '@/components/Icons'
+import {motion} from 'framer-motion';
+
+const FramerImage = motion(Image)
 
 export const Project=({type, title, img, link, github})=>{
     return(
       <article className='relative w-full flex flex-col items-start justify-center rounded-3xl border-2 border-dark p-6 bg-light shadow-2xl'>
         <Link className='w-full cursor-pointer overflow-hidden rounded-lg' href={link} target='_blank'>
-          <Image src={img} alt={title} />
+          <FramerImage whileHover={{scale: 1.05}} transition={{duration: 0.2}} src={img} alt={title} />
         </Link>
   
         <div className='w-full flex flex-col items-start justify-between mt-4'>
