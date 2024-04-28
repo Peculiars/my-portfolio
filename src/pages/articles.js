@@ -42,7 +42,7 @@ const HoverImg =({title, img, link})=>{
 
 const Article =({img, title, date, link})=>{
   return(
-    <motion.li initial={{y:50}} whileInView={{y:0, transition:{duration:0.7, ease:"easeInOut"}}} className='relative w-full px-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark border-2 border-dark border-r-4 border-b-4'>
+    <motion.li initial={{y:100}} whileInView={{y:0, transition:{duration:0.7, ease:"easeInOut"}}} className='relative w-full px-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark border-2 border-dark border-r-4 border-b-4'>
       <HoverImg title={title} img={img} link={link}/>
       <span className='text-primary font-semibold pl-4'>{date}</span>
     </motion.li>

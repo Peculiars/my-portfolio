@@ -41,7 +41,7 @@ export default function About() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='w-full'>
+      <main className='w-full dark:text-light'>
         <Layout>
           <AnimatedText text='Passion Fuels Purpose! ' className='flex items-center justify-center'/>
           <div className='grid w-full grid-cols-8 gap-16 my-4'>
@@ -66,15 +66,15 @@ export default function About() {
             <div className='col-span-2 flex items-end justify-between flex-col'>
                 <div className='flex flex-col items-end justify-center'>
                 <span className='text-7xl font-bold'><AnimatedNumbers value={50}/>+</span>
-                  <h2 className='text-xl capitalize font-medium text-dark/75'>satisfield clients</h2>
+                  <h2 className='text-xl capitalize font-medium text-dark/75 dark:text-light'>satisfield clients</h2>
                 </div>
                 <div className='flex flex-col items-end justify-center'>
                 <span className='text-7xl font-bold'><AnimatedNumbers value={40}/>+</span>
-                  <h2 className='text-xl capitalize font-medium text-dark/75'>completed projects</h2>
+                  <h2 className='text-xl capitalize font-medium text-dark/75 dark:text-light'>completed projects</h2>
                 </div>
                 <div className='flex flex-col items-end justify-center'>
                 <span className='text-7xl font-bold'><AnimatedNumbers value={2}/>+</span>
-                  <h2 className='text-xl capitalize font-medium text-dark/75'>years of experience</h2>
+                  <h2 className='text-xl capitalize font-medium text-dark/75 dark:text-light'>years of experience</h2>
                 </div>
               </div>
           </div>
