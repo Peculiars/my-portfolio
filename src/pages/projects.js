@@ -15,71 +15,71 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>My Project page</title>
+        <title>Dynasty | Project page</title>
         <meta name="description" content="I'm a Frontend Developer, I create responsive website that suites you." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className='w-full flex flex-col items-center justify-center mb-10'>
         <Layout className=''>
-          <AnimatedText text='Imagination Trumps Knowledge!'/>
+          <AnimatedText text='Imagination Trumps Knowledge!' className='text-center py-10'/>
           <div className='grid grid-cols-12 gap-24 pt-10'>
               <div className='relative col-span-12 rounded-3xl'>
-              <div className='absolute top-0 -right-4 z-1 w-[101.1%] h-[103%] rounded-[2.5rem] bg-dark'/>
+              <div className='absolute top-0 -right-4 z-1 w-[101.1%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light'/>
                 <FeaturedProjects
                 title='Portfolio'
                 img={project1}
                 summary='A professional portfolio website using Next JS, Framer-motion, and TailwindCSS. It has smooth 
                 page transitions, cool background effects, unique design and it is mobile responsive.'
                 link='/'
-                github='/'
+                github='https://github.com/Peculiars/my-portfolio'
                 type='Featured Project'
                 />
               </div>
               <div className='relative col-span-6'>
-                    <div className='absolute top-0.5 -right-3 z-1 w-[101.7%] h-[102%] rounded-[2rem] bg-dark'/>
+                    <div className='absolute top-0.5 -right-3 z-1 w-[101.7%] h-[102%] rounded-[2rem] bg-dark dark:bg-light'/>
                     <Project
                     title='easybank Landing Page'
                     img={project4}
-                    link='/'
-                    github='/'
+                    link='https://onlineeasybank.netlify.app'
+                    github='https://github.com/Peculiars/easybank'
                     />
               </div>
               <div className='relative col-span-6'>
-                    <div className='absolute top-0.5 -right-3 z-1 w-[101.7%] h-[102%] rounded-[2rem] bg-dark'/>
+                    <div className='absolute top-0.5 -right-3 z-1 w-[101.7%] h-[102%] rounded-[2rem] bg-dark dark:bg-light'/>
                     <Project
                     title='tindog Landing Page'
                     img={project6}
-                    link='/'
-                    github='/'
+                    link='https://dtindog.netlify.app'
+                    github='https://github.com/Peculiars/Tindog'
                     />
               </div>
               <div className='relative col-span-12 rounded-3xl'>
-                <div className='absolute top-0 -right-4 z-1 w-[101.1%] h-[103%] rounded-[2.5rem] bg-dark'/> 
+                <div className='absolute top-0 -right-4 z-1 w-[101.1%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light'/> 
                 <FeaturedProjects
                 title='Responsive Admin Dashboard'
                 img={project2}
                 summary='A professional and responsive admin-dashboard, showcasing .'
                 link='/'
-                github='/'
+                github='https://github.com/Peculiars/admin-dashboard'
                 type='Featured Project'
                 />
               </div>
               <div className='relative col-span-6'>
-                    <div className='absolute top-0.5 -right-3 z-1 w-[101.7%] h-[102%] rounded-[2rem] bg-dark'/>
+                    <div className='absolute top-0.5 -right-3 z-1 w-[101.7%] h-[102%] rounded-[2rem] bg-dark  dark:bg-light'/>
                     <Project
                     title='Meenah Fashion Store'
                     img={project3}
-                    link='/'
-                    github='/'
+                    link='https://meenah.netlify.app'
+                    github='https://github.com/Peculiars/meenah'
                     />
               </div>
               <div className='relative col-span-6'>
-                    <div className='absolute top-0.5 -right-3 z-1 w-[101.7%] h-[102%] rounded-[2rem] bg-dark'/>
+                    <div className='absolute top-0.5 -right-3 z-1 w-[101.7%] h-[102%] rounded-[2rem] bg-dark  dark:bg-light'/>
                     <Project
                     title='E-commerce Product Page'
                     img={project5}
-                    link='/'
-                    github='/'
+                    link='https://e-commerce-product-view.netlify.app'
+                    github='https://github.com/Peculiars/e-commerce-product-page'
                     />
               </div>
           </div>

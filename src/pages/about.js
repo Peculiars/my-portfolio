@@ -43,7 +43,7 @@ export default function About() {
       </Head>
       <main className='w-full dark:text-light'>
         <Layout>
-          <AnimatedText text='Passion Fuels Purpose! ' className='flex items-center justify-center'/>
+          <AnimatedText text='Passion Fuels Purpose! ' className='flex items-center justify-center text-center py-10'/>
           <div className='grid w-full grid-cols-8 gap-16 my-4'>
             <div className=' col-span-3 flex flex-col items-center justify-start'>
               <h2 className='text-lg font-bold text-dark uppercase mb-4'>Biography</h2>
@@ -58,9 +58,9 @@ export default function About() {
               other digital product, I bring my commitment to design excellence and user-centered thinking to 
               every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.</p>
             </div>
-            <div className='relative col-span-3 bg-dark rounded-[2rem] p-8 w-[80%] h-[95%] top-8 left-5'>
-              <div className='w-[98%] h-[98%] bg-light rounded-2xl p-8 border-2 border-dark absolute -top-1 -left-1'>
-                <Image src={dynasty} alt='Dynasty image' className='w-full h-[100%] rounded-2xl bg-dark'/>
+            <div className='relative col-span-3 bg-dark dark:bg-light rounded-[2rem] p-8 w-[80%] h-[95%] top-8 left-5'>
+              <div className='w-[98%] h-[98%] bg-light dark:bg-dark dark:border-light rounded-2xl p-8 border-2 border-dark absolute -top-1 -left-1'>
+                <Image priority sizes='(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw' src={dynasty} alt='Dynasty image' className='w-full h-[100%] rounded-2xl bg-dark'/>
               </div>
             </div>
             <div className='col-span-2 flex items-end justify-between flex-col'>

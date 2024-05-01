@@ -10,7 +10,7 @@ export const Footer = () => {
             <div className='flex items-center'>
                 <span className='flex items-center'>Build with <span className=' text-primary dark:text-primaryDark text-2xl px-1'>&#9825; </span>by&nbsp;<Link className='underline underline-offset-2' href='/'>Dynasty</Link></span>
             </div>
-            <Link className='underline underline-offset-2' href='/'>Say hello</Link>
+            <Link className='underline underline-offset-2' href='mailto:olaitandamilare230@gmail.com'>Say hello</Link>
         </Layout>
     </footer>
   )

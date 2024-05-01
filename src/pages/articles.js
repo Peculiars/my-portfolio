@@ -35,16 +35,16 @@ const HoverImg =({title, img, link})=>{
   return(
     <Link href={link} target='_blank' onMouseMove={handleMouse} onMouseLeave={handleMouseleave}>
       <h2 className='capitalize text-xl font-semibold hover:underline'>{title}</h2>
-      <FramerImage style={{x:x, y:y}} initial={{opacity: 0}} whileInView={{opacity:1, transition:{duration:0.8}}} ref={imgRef} src={img} alt={title} className='w-96 h-auto hidden absolute z-10 rounded-lg'/>
+      <FramerImage priority sizes='(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw' style={{x:x, y:y}} initial={{opacity: 0}} whileInView={{opacity:1, transition:{duration:0.8}}} ref={imgRef} src={img} alt={title} className='w-96 h-auto hidden absolute z-10 rounded-lg'/>
     </Link>
   )
 }
 
 const Article =({img, title, date, link})=>{
   return(
-    <motion.li initial={{y:100}} whileInView={{y:0, transition:{duration:0.7, ease:"easeInOut"}}} className='relative w-full px-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark border-2 border-dark border-r-4 border-b-4'>
+    <motion.li initial={{y:200}} whileInView={{y:0, transition:{duration:0.7, ease:"easeInOut"}}} className='relative w-full px-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark border-2 border-dark dark:border-light dark:bg-dark dark:text-light border-r-4 border-b-4'>
       <HoverImg title={title} img={img} link={link}/>
-      <span className='text-primary font-semibold pl-4'>{date}</span>
+      <span className='text-primary dark:text-primaryDark font-semibold pl-4'>{date}</span>
     </motion.li>
   )
 }
@@ -53,8 +53,8 @@ export default function Articles() {
   return (
     <>
       <Head>
-        <title>Damilare</title>
-        <meta name="description" content="I'm a Frontend Developer, I create responsive website that suites you." />
+        <title>Dynasty | Articles</title>
+        <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className='w-full flex flex-col items-center justify-center overflow-hidden'>
@@ -72,7 +72,7 @@ export default function Articles() {
                 img={article1}/>
             </div>
             <div className='relative'>
-              <div className='absolute top-0.5 -right-3 z-1 w-[101.7%] h-[102%] rounded-[2rem] bg-dark'/>
+              <div className='absolute top-0.5 -right-3 z-1 w-[101.7%] h-[102%] rounded-[2rem] bg-dark dark:bg-light'/>
               <FeaturedArticle 
               title='Creating Stunning Loading Screens In React: Build 3 Types Of Loading Screens'
               summary='Learn how to create stunning loading screens in React with 3 different methods. 
@@ -82,7 +82,7 @@ export default function Articles() {
               img={article2}/>
             </div>
           </ul>
-          <h2 className='font-bold text-4xl w-full text-center my-10'>All Articles</h2>
+          <h2 className='font-bold text-4xl w-full text-center my-10 dark:text-light'>All Articles</h2>
           <ul className=' mb-48'>
             <Article 
             title='Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling' 

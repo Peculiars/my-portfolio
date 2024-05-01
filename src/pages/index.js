@@ -19,24 +19,24 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='flex items-center text-dark w-full min-h-[100%] dark:text-light'>
-        <Layout>
+        <Layout className=''>
           <div className='flex items-center justify-between w-full'>
-            <div className='w-2/3 flex flex-col items-center self-center text-left'>
-              <AnimatedText text='Turning Vision Into Reality With Code.'/>
-              <p className='my-4 text-base font-medium'>As a skilled Developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in web and mobile development.</p>
+            <div className='md:w-2/3 flex flex-col items-center self-center text-left'>
+              <AnimatedText text='Turning Vision Into Reality With Code.' className=''/>
+              <p className='my-4 md:text-base font-medium'>As a skilled Developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in web and mobile development.</p>
               <div className='flex items-center self-start gap-4'>
                 <Link className='bg-dark text-light py-2 px-6 rounded-md text-lg font-semibold flex gap-1 hover:bg-light hover:text-dark hover:outline outline-2 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light' href='/doc.pdf' download={true} target='_blank'>Resume <LinkArrow className={"w-6"}/></Link>
                 <Link className='text-lg font-medium text-dark underline capitalize dark:text-light' href='mailto:olaitandamilare230@gmail.com' target='_blank'>Contact</Link>
               </div>
             </div>
             <div className='w-1/2'>
-              <Image src={peculiars} alt='The Developer image' className=' w-[30rem] h-auto'/>
+              <Image src={peculiars} alt='The Developer image' className=' w-[30rem] h-auto' priority sizes='(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw'/>
             </div>
           </div>
         </Layout>
         <HireMe/>
-        <div className='absolute bottom-14 right-20 w-24'>
-          <Image src={lightBulb} alt className='w-full h-auto'/>
+        <div className='absolute bottom-14 right-20 w-24 xl:right-14 xl:w-20'>
+          <Image src={lightBulb} alt className='w-full h-auto' priority sizes='(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw'/>
         </div>
       </main>
     </>
