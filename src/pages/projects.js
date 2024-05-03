@@ -21,10 +21,10 @@ export default function Projects() {
       </Head>
       <main className='w-full flex flex-col items-center justify-center mb-10'>
         <Layout className=''>
-          <AnimatedText text='Imagination Trumps Knowledge!' className='text-center py-10'/>
-          <div className='grid grid-cols-12 gap-24 pt-10'>
+          <AnimatedText text='Imagination Trumps Knowledge!' className='text-center py-10 xs:text-5xl sm:text-7xl'/>
+          <div className='grid xs:grid-cols-12 xs:gap-y-10 sm:gap-x-8 lg:gap-14 pt-10'>
               <div className='relative col-span-12 rounded-3xl'>
-              <div className='absolute top-0 -right-4 z-1 w-[101.1%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light'/>
+                <div className='absolute top-0 md:-right-4 xs:-right-2 z-1 w-[101.1%] md:h-[103%] sm:h-[102%] xs:h-[102%] rounded-[2.5rem] bg-dark dark:bg-light'/>
                 <FeaturedProjects
                 title='Portfolio'
                 img={project1}
@@ -35,8 +35,8 @@ export default function Projects() {
                 type='Featured Project'
                 />
               </div>
-              <div className='relative col-span-6'>
-                    <div className='absolute top-0.5 -right-3 z-1 w-[101.7%] h-[102%] rounded-[2rem] bg-dark dark:bg-light'/>
+              <div className='relative sm:col-span-6 xs:col-span-12'>
+                  <div className='absolute top-0 md:-right-4 xs:-right-2 z-1 w-[101.1%] md:h-[103%] sm:h-[102%] xs:h-[102%] rounded-[2.5rem] bg-dark dark:bg-light'/>
                     <Project
                     title='easybank Landing Page'
                     img={project4}
@@ -44,8 +44,8 @@ export default function Projects() {
                     github='https://github.com/Peculiars/easybank'
                     />
               </div>
-              <div className='relative col-span-6'>
-                    <div className='absolute top-0.5 -right-3 z-1 w-[101.7%] h-[102%] rounded-[2rem] bg-dark dark:bg-light'/>
+              <div className='relative sm:col-span-6 xs:col-span-12'>
+                  <div className='absolute top-0 md:-right-4 xs:-right-2 z-1 w-[101.1%] md:h-[103%] sm:h-[102%] xs:h-[102%] rounded-[2.5rem] bg-dark dark:bg-light'/>
                     <Project
                     title='tindog Landing Page'
                     img={project6}
@@ -54,7 +54,7 @@ export default function Projects() {
                     />
               </div>
               <div className='relative col-span-12 rounded-3xl'>
-                <div className='absolute top-0 -right-4 z-1 w-[101.1%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light'/> 
+                <div className='absolute top-0 md:-right-4 xs:-right-2 z-1 w-[101.1%] md:h-[103%] sm:h-[102%] xs:h-[102%] rounded-[2.5rem] bg-dark dark:bg-light'/> 
                 <FeaturedProjects
                 title='Responsive Admin Dashboard'
                 img={project2}
@@ -64,8 +64,8 @@ export default function Projects() {
                 type='Featured Project'
                 />
               </div>
-              <div className='relative col-span-6'>
-                    <div className='absolute top-0.5 -right-3 z-1 w-[101.7%] h-[102%] rounded-[2rem] bg-dark  dark:bg-light'/>
+              <div className='relative sm:col-span-6 xs:col-span-12'>
+                  <div className='absolute top-0 md:-right-4 xs:-right-2 z-1 w-[101.1%] md:h-[103%] sm:h-[102%] xs:h-[102%] rounded-[2.5rem] bg-dark dark:bg-light'/>
                     <Project
                     title='Meenah Fashion Store'
                     img={project3}
@@ -73,8 +73,8 @@ export default function Projects() {
                     github='https://github.com/Peculiars/meenah'
                     />
               </div>
-              <div className='relative col-span-6'>
-                    <div className='absolute top-0.5 -right-3 z-1 w-[101.7%] h-[102%] rounded-[2rem] bg-dark  dark:bg-light'/>
+              <div className='relative sm:col-span-6 xs:col-span-12'>
+                  <div className='absolute top-0 md:-right-4 xs:-right-2 z-1 w-[101.1%] md:h-[103%] sm:h-[102%] xs:h-[102%] rounded-[2.5rem] bg-dark dark:bg-light'/>
                     <Project
                     title='E-commerce Product Page'
                     img={project5}

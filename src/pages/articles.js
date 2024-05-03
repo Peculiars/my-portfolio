@@ -34,7 +34,7 @@ const HoverImg =({title, img, link})=>{
   }
   return(
     <Link href={link} target='_blank' onMouseMove={handleMouse} onMouseLeave={handleMouseleave}>
-      <h2 className='capitalize text-xl font-semibold hover:underline'>{title}</h2>
+      <h2 className='capitalize md:text-xl xs:text-xs xs:font-normal md:font-semibold hover:underline'>{title}</h2>
       <FramerImage priority sizes='(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw' style={{x:x, y:y}} initial={{opacity: 0}} whileInView={{opacity:1, transition:{duration:0.8}}} ref={imgRef} src={img} alt={title} className='w-96 h-auto hidden absolute z-10 rounded-lg'/>
     </Link>
   )
@@ -42,9 +42,9 @@ const HoverImg =({title, img, link})=>{
 
 const Article =({img, title, date, link})=>{
   return(
-    <motion.li initial={{y:200}} whileInView={{y:0, transition:{duration:0.7, ease:"easeInOut"}}} className='relative w-full px-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark border-2 border-dark dark:border-light dark:bg-dark dark:text-light border-r-4 border-b-4'>
+    <motion.li initial={{y:200}} whileInView={{y:0, transition:{duration:0.7, ease:"easeInOut"}}} className='relative w-full xs:px-2 md:px-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark border-2 border-dark dark:border-light dark:bg-dark dark:text-light border-r-4 border-b-4'>
       <HoverImg title={title} img={img} link={link}/>
-      <span className='text-primary dark:text-primaryDark font-semibold pl-4'>{date}</span>
+      <span className='text-primary dark:text-primaryDark xs:font-normal md:font-semibold pl-4 xs:text-xs md:text-base'>{date}</span>
     </motion.li>
   )
 }
@@ -59,10 +59,10 @@ export default function Articles() {
       </Head>
       <main className='w-full flex flex-col items-center justify-center overflow-hidden'>
         <Layout>
-          <AnimatedText text='Words Can Change The World!' className='text-center py-10'/>
-          <ul className='relative grid grid-cols-2 gap-16 py-10'>
+          <AnimatedText text='Words Can Change The World!' className='text-center py-10 xs:text-5xl sm:text-7xl xs:px-0'/>
+          <ul className='relative grid xs:grid-cols-1 md:grid-cols-2 gap-16 py-10'>
             <div className='relative'>
-              <div className='absolute top-0.5 -right-3 z-1 w-[101.7%] h-[102%] rounded-[2rem] bg-dark'/>
+              <div className='absolute top-0.5 xs:-right-1.5 md:-right-3 z-1 xs:w-[101%] xs:h-[101.5%] md:w-[101.7%] md:h-[102%] rounded-[2rem] bg-dark dark:bg-light'/>
                 <FeaturedArticle 
                 title='Build A Custom Pagination Component In Reactjs From Scratch'
                 summary='Learn how to build a custom pagination component in ReactJS from scratch. 
@@ -72,7 +72,7 @@ export default function Articles() {
                 img={article1}/>
             </div>
             <div className='relative'>
-              <div className='absolute top-0.5 -right-3 z-1 w-[101.7%] h-[102%] rounded-[2rem] bg-dark dark:bg-light'/>
+              <div className='absolute top-0.5 xs:-right-1.5 md:-right-3 z-1 xs:w-[101%] xs:h-[101.5%] md:w-[101.7%] md:h-[102%] rounded-[2rem] bg-dark dark:bg-light'/>
               <FeaturedArticle 
               title='Creating Stunning Loading Screens In React: Build 3 Types Of Loading Screens'
               summary='Learn how to create stunning loading screens in React with 3 different methods. 
