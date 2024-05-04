@@ -9,6 +9,7 @@ import project3 from '../../public/images/projects/project3.png'
 import project6 from '../../public/images/projects/project6.png'
 import project2 from '../../public/images/projects/project2.png'
 import project5 from '../../public/images/projects/project5.png'
+import { TransitionEffect } from '@/components/TransitionEffect'
 
 
 export default function Projects() {
@@ -19,6 +20,7 @@ export default function Projects() {
         <meta name="description" content="I'm a Frontend Developer, I create responsive website that suites you." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      <TransitionEffect/>
       <main className='w-full flex flex-col items-center justify-center mb-10'>
         <Layout className=''>
           <AnimatedText text='Imagination Trumps Knowledge!' className='text-center py-10 xs:text-5xl sm:text-7xl'/>

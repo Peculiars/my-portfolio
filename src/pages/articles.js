@@ -14,6 +14,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useRef } from 'react'
+import { TransitionEffect } from '@/components/TransitionEffect'
 const FramerImage = motion(Image)
 
 const HoverImg =({title, img, link})=>{
@@ -57,6 +58,7 @@ export default function Articles() {
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      <TransitionEffect/>
       <main className='w-full flex flex-col items-center justify-center overflow-hidden'>
         <Layout>
           <AnimatedText text='Words Can Change The World!' className='text-center py-10 xs:text-5xl sm:text-7xl xs:px-0'/>

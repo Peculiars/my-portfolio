@@ -7,9 +7,9 @@ export const Certification = () => {
     const ref = useRef(null);
     const {scrollYProgress} = useScroll({target: ref, offset: ["start end", "center start"]})
   return (
-        <div className='my-64'>
-            <h2 className='font-bold text-8xl text-center w-full mb-20'>Certification</h2>
-            <div className='w-[75%] mx-auto relative'>
+        <div className='xs:my-40 sm:my-64'>
+            <h2 className='font-bold xs:text-5xl sm:text-8xl text-center w-full mb-20'>Certification</h2>
+            <div className='xs:w-[100%] sm:w-[75%] mx-auto relative'>
                 <ul ref={ref} className='w-full h-full flex flex-col items-start justify-between ml-4 text-left'>
                     <motion.div style={{scaleY: scrollYProgress}} className='absolute left-9 top-0 bg-dark dark:bg-light w-[4px] h-full origin-top'/>
                     <CertDetails title='Introduction to Frontend Developement' year='2023' place='Meta inc. (Coursera)' desc='This immersive journey deepened my understanding of HTML, CSS, JavaScript, Version Control, React — the cornerstones of modern web development. Through hands-on projects, I honed my skills, laying the groundwork for crafting dynamic user interfaces.'/>
