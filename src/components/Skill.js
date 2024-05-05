@@ -7,7 +7,7 @@ export const Skill = () => {
     <>
         <h2 className='font-bold md:text-8xl xs:text-6xl w-full text-center mt-64'>Skills</h2>
         <div className='relative w-full xl:h-screen lg:h-[60vh] xs:h-[50vh] flex items-center justify-center rounded-full xs:bg-circularLightSm xs:dark:bg-circularDarkSm md:bg-circularLight md:dark:bg-circularDark'>
-            <motion.div className='flex items-center justify-center xs:bg-transparent xs:dark:text-normal xs:text-dark xs:dark:text-light sm:bg-dark sm:dark:bg-light sm:dark:text-dark text-light xs:font-normal sm:font-semibold rounded-full shadow-dark md:p-5 xs:p-2 cursor-pointer' whileHover={{scale: 1.1}}>
+            <motion.div className='flex items-center justify-center xs:bg-transparent xs:dark:text-normal xs:text-dark xs:dark:text-light sm:bg-dark sm:text-light sm:dark:bg-light sm:dark:text-dark text-light xs:font-normal sm:font-semibold rounded-full shadow-dark md:p-5 xs:p-2 cursor-pointer' whileHover={{scale: 1.1}}>
                 web
             </motion.div>
             <Skills name='CSS3' x='0vw' y='-10vw'/>

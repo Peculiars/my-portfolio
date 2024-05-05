@@ -67,7 +67,7 @@ export default function Projects() {
                 />
               </div>
               <div className='relative sm:col-span-6 xs:col-span-12'>
-                  <div className='absolute top-0 md:-right-4 xs:-right-2 z-1 w-[101.1%] md:h-[103%] sm:h-[102%] xs:h-[102%] rounded-[2.5rem] bg-dark dark:bg-light'/>
+                  <div className='absolute top-0 md:-right-4 xs:-right-2 z-1 w-[101.1%] md:h-[103%] lg:h-[93%] sm:h-[102%] xs:h-[102%] rounded-[2.5rem] bg-dark dark:bg-light'/>
                     <Project
                     title='Meenah Fashion Store'
                     img={project3}

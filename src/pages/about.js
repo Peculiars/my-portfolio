@@ -60,8 +60,8 @@ export default function About() {
               other digital product, I bring my commitment to design excellence and user-centered thinking to 
               every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.</p>
             </div>
-            <div className='relative xl:col-span-3 lg:col-span-4 xs:col-span-8 md:order-2 xs:order-1 bg-dark dark:bg-light rounded-[2rem] p-8 w-[80%] sm:h-[90%] xs:w-[90%] xs:h-[50vh] top-8 left-5'>
-              <div className='w-[98%] h-[98%] bg-light dark:bg-dark dark:border-light rounded-2xl p-8 border-2 border-dark absolute -top-1 -left-1'>
+            <div className='relative xl:col-span-3 lg:col-span-4 xs:col-span-8 md:order-2 xs:order-1 bg-dark dark:bg-light rounded-[2rem] p-8 w-[80%] xs:w-[90%] xs:h-[50vh] lg:h-[90%] top-8 left-5'>
+              <div className='w-[100%] h-[98%] bg-light dark:bg-dark dark:border-light rounded-2xl p-8 border-2 border-dark absolute -top-1 -left-2'>
                 <Image priority sizes='(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw' src={dynasty} alt='Dynasty image' className='w-full h-[100%] rounded-2xl bg-dark'/>
               </div>
             </div>
