@@ -9,6 +9,7 @@ import project3 from '../../public/images/projects/project3.png'
 import project6 from '../../public/images/projects/project6.png'
 import project2 from '../../public/images/projects/project2.png'
 import project5 from '../../public/images/projects/project5.png'
+import project7 from '../../public/images/projects/project7.png'
 import { TransitionEffect } from '@/components/TransitionEffect'
 
 
@@ -28,12 +29,12 @@ export default function Projects() {
               <div className='relative col-span-12 rounded-3xl'>
                 <div className='absolute top-0 md:-right-4 xs:-right-2 z-1 w-[101.1%] md:h-[103%] sm:h-[102%] xs:h-[102%] rounded-[2.5rem] bg-dark dark:bg-light'/>
                 <FeaturedProjects
-                title='Portfolio'
-                img={project1}
-                summary='A professional portfolio website using Next JS, Framer-motion, and TailwindCSS. It has smooth 
+                title='Dyna Bank'
+                img={project7}
+                summary='An Imaginary responsive mobile banking solution that allows it users to track and monitor their savings,cards and transactions. A professional portfolio website using Next JS, Framer-motion, and TailwindCSS. It has smooth 
                 page transitions, cool background effects, unique design and it is mobile responsive.'
-                link='/'
-                github='https://github.com/Peculiars/my-portfolio'
+                link='https://dynabank.netlify.app/'
+                github='https://github.com/Peculiars/DynaBank'
                 type='Featured Project'
                 />
               </div>
@@ -58,11 +59,12 @@ export default function Projects() {
               <div className='relative col-span-12 rounded-3xl'>
                 <div className='absolute top-0 md:-right-4 xs:-right-2 z-1 w-[101.1%] md:h-[103%] sm:h-[102%] xs:h-[102%] rounded-[2.5rem] bg-dark dark:bg-light'/> 
                 <FeaturedProjects
-                title='Responsive Admin Dashboard'
-                img={project2}
-                summary='A professional and responsive admin-dashboard, showcasing .'
+                title='Portfolio'
+                img={project1}
+                summary='A professional portfolio website using Next JS, Framer-motion, and TailwindCSS. It has smooth 
+                page transitions, cool background effects, unique design and it is mobile responsive.'
                 link='/'
-                github='https://github.com/Peculiars/admin-dashboard'
+                github='https://github.com/Peculiars/my-portfolio'
                 type='Featured Project'
                 />
               </div>
@@ -84,9 +86,23 @@ export default function Projects() {
                     github='https://github.com/Peculiars/e-commerce-product-page'
                     />
               </div>
+
+              <div className='relative col-span-12 rounded-3xl'>
+                <div className='absolute top-0 md:-right-4 xs:-right-2 z-1 w-[101.1%] md:h-[103%] sm:h-[102%] xs:h-[102%] rounded-[2.5rem] bg-dark dark:bg-light'/> 
+                <FeaturedProjects
+                title='Responsive Admin Dashboard'
+                img={project2}
+                summary='A professional and responsive admin-dashboard, showcasing users(customers) revenue and purchases, built with reactJS and TailwindCSS .'
+                link='/'
+                github='https://github.com/Peculiars/admin-dashboard'
+                type='Featured Project'
+                />
+              </div>
           </div>
         </Layout>
       </main>
     </>
   )
 }
+
+
