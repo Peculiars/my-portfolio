@@ -20,8 +20,8 @@ export const Skill = () => {
             <Skills name='NodeJS' x='0vw' y='10vw'/>
             <Skills name='Firebase' x='-20vw' y='15vw'/>
             <Skills name='JavaScript' x='18vw' y='15vw'/>
-            <Skills name='React Native' x='-32vw' y='6vw'/>
-            <Skills name='Framer motion' x='-15vw' y='2vw'/>
+            <Skills name='TypeScript' x='-32vw' y='6vw'/>
+            <Skills name='Python' x='-15vw' y='2vw'/>
             <Skills name='BootStrap' x='15vw' y='2vw'/>
         </div>
     </>

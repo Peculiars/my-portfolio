@@ -20,6 +20,7 @@ export default function Projects() {
         <title>Dynasty | Project page</title>
         <meta name="description" content="I'm a Frontend Developer, I create responsive website that suites you." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type='image/icon' href="/favicon.ico" />
       </Head>
       <TransitionEffect/>
       <main className='w-full flex flex-col items-center justify-center mb-10'>
@@ -31,8 +32,7 @@ export default function Projects() {
                 <FeaturedProjects
                 title='Dyna Bank'
                 img={project7}
-                summary='An Imaginary responsive mobile banking solution that allows it users to track and monitor their savings,cards and transactions. A professional portfolio website using Next JS, Framer-motion, and TailwindCSS. It has smooth 
-                page transitions, cool background effects, unique design and it is mobile responsive.'
+                summary='An Imaginary responsive mobile banking solution that allows it users to track and monitor their savings,cards and transactions.'
                 link='https://dynabank.netlify.app/'
                 github='https://github.com/Peculiars/DynaBank'
                 type='Featured Project'

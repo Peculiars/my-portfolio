@@ -55,8 +55,9 @@ export default function Articles() {
     <>
       <Head>
         <title>Dynasty | Articles</title>
-        <meta name="description" content="" />
+        <meta name="description" content="Some intresting articles" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type='image/icon' href="/favicon.ico" />
       </Head>
       <TransitionEffect/>
       <main className='w-full flex flex-col items-center justify-center overflow-hidden'>
