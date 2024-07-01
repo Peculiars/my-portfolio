@@ -27,7 +27,7 @@ export default function Home() {
               <AnimatedText text='Turning Vision Into Reality With Code.' className='xs:text-center lg:text-left xs:text-4xl sm:text-6xl lg:text-5xl xl:text-7xl'/>
               <p className='my-4 sm:text-base xs:text-sm font-medium xs:text-center lg:text-left'>As a skilled Developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in web and mobile development.</p>
               <div className='flex items-center lg:self-start xs:gap-4 sm:gap-10 sm:self-center sm:pt-10 lg:pt-0 md:pt-0 '>
-                <Link className='bg-dark text-light py-2 px-6 rounded-md text-lg font-semibold flex gap-1 hover:bg-light hover:text-dark hover:outline outline-2 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light' href='/dynasty.pdf' download={true} target='_blank'>Resume <LinkArrow className={"w-6"}/></Link>
+                <Link className='bg-dark text-light py-2 px-6 rounded-md text-lg font-semibold flex gap-1 hover:bg-light hover:text-dark hover:outline outline-2 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light' href='/OlaitanDamilare.pdf' download={true} target='_blank'>Resume <LinkArrow className={"w-6"}/></Link>
                 <Link className='text-lg font-medium text-dark underline capitalize dark:text-light' href='mailto:olaitandamilare230@gmail.com' target='_blank'>Contact</Link>
               </div>
             </div>
