@@ -54,7 +54,7 @@ export default function Articles() {
   return (
     <>
       <Head>
-        <title>Dynasty | Articles</title>
+        <title>Peculiar | Articles</title>
         <meta name="description" content="Some intresting articles" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type='image/icon' href="/favicon.ico" />

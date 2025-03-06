@@ -57,7 +57,7 @@ export const Navbar = () => {
             <Logo/>
             <nav className='flex items-center gap-5'>
                 <motion.a href='https://www.linkedin.com/in/olaitan-damilare-ba5897184' target={'_blank'} whileHover={{y: -5}} whileTap={{scale: 0.8}}><LinkedInIcon/></motion.a>
-                <motion.a href='https://twitter.com/D_peculiars' target={'_blank'} whileHover={{y: -5}} whileTap={{scale: 0.8}}><TwitterIcon/></motion.a>
+                <motion.a href='https://twitter.com/0x2dynasty' target={'_blank'} whileHover={{y: -5}} whileTap={{scale: 0.8}}><TwitterIcon/></motion.a>
                 <motion.a href='https://github.com/Peculiars' target={'_blank'} whileHover={{y: -5}} whileTap={{scale: 0.8}}><GithubIcon/></motion.a>
         
                 <button onClick={()=> setMode(mode === 'light'? 'dark' : 'light')}>

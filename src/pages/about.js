@@ -2,13 +2,14 @@ import { AnimatedText } from '@/components/AnimatedText';
 import { Layout } from '@/components/Layout';
 import Head from 'next/head';
 import Image from 'next/image';
-import dynasty from '../../public/images/profile/dynasty.png';
 import { useEffect, useRef } from 'react';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import { Skill } from '@/components/Skill';
 import { Experience } from '@/components/Experience';
 import { Certification } from '@/components/Certification';
 import { TransitionEffect } from '@/components/TransitionEffect';
+import { Community } from '@/components/community';
+import dynasty from "../../public/images/profile/dynasty.png";
 
 export default function About() {
 
@@ -37,7 +38,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>Dynasty | About me</title>
+        <title>Peculiar | About me</title>
         <meta name="description" content="Learn more about Dynasty's unique approach, stack and expertise in web development" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -49,8 +50,8 @@ export default function About() {
           <div className='grid w-full grid-cols-8 xs:gap-y-14 xs:gap-x-0 md:gap-16 my-4'>
             <div className=' xl:col-span-3 lg:col-span-4 xs:col-span-8 xs:order-2 flex flex-col items-center justify-start'>
               <h2 className='text-lg font-bold text-dark dark:text-light uppercase mb-4'>Biography</h2>
-              <p className='font-medium my-2'>Hi, I&apos;m Olaitan Damilare or you call me Dynasty, am a web and mobile developer with a passion for creating beautiful, functional, 
-                and user-centered digital experiences. With 2 years of experience in the field. I am always looking for 
+              <p className='font-medium my-2'>Hi, I&apos;m Olaitan Damilare or you call me Peculiar, am a web and mobile developer with a passion for creating beautiful, functional, 
+                and user-centered digital experiences. With 3 years of experience in the field. I am always looking for 
                 new and innovative ways to bring my clients&apos; visions to life.</p>
 
               <p className='font-medium my-2'>I believe that developing digital presence is something more than just making the UI looks pretty alone, it&apos;s more about solving problems and 
@@ -61,21 +62,21 @@ export default function About() {
               every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.</p>
             </div>
             <div className='relative xl:col-span-3 lg:col-span-4 xs:col-span-8 md:order-2 xs:order-1 bg-dark dark:bg-light rounded-[2rem] p-8 w-[80%] xs:w-[90%] xs:h-[50vh] lg:h-[90%] top-8 left-5'>
-              <div className='w-[100%] h-[98%] bg-light dark:bg-dark dark:border-light rounded-2xl p-8 border-2 border-dark absolute -top-1 -left-2'>
-                <Image priority sizes='(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw' src={dynasty} alt='Dynasty image' className='w-full h-[100%] rounded-2xl bg-dark'/>
+              <div className='w-[100%] h-[98%] bg-light dark:bg-dark dark:border-light rounded-2xl border-2 border-dark absolute -top-1 -left-2'>
+                <Image src={dynasty} priority sizes='(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw' alt='Olaitan Damilare' className='w-full h-[100%] rounded-2xl bg-dark'/>
               </div>
             </div>
             <div className='xl:col-span-2 xs:col-span-8 xs:order-3 flex items-end justify-between xs:flex-row xl:flex-col'>
                 <div className='flex flex-col xs:items-center xl:items-end justify-center xs:text-center xl:text-right'>
-                  <span className='xs:text-5xl md:text-7xl font-bold'><AnimatedNumbers value={8}/>+</span>
+                  <span className='xs:text-5xl md:text-7xl font-bold'><AnimatedNumbers value={10}/>+</span>
                   <h2 className='xs:text-sm md:text-xl capitalize font-medium text-dark/75 dark:text-light'>satisfield clients</h2>
                 </div>
                 <div className='flex flex-col xs:items-center xl:items-end justify-center xs:text-center xl:text-right'>
-                <span className='xs:text-5xl md:text-7xl font-bold'><AnimatedNumbers value={10}/>+</span>
+                <span className='xs:text-5xl md:text-7xl font-bold'><AnimatedNumbers value={20}/>+</span>
                   <h2 className='xs:text-sm md:text-xl capitalize font-medium text-dark/75 dark:text-light'>completed projects</h2>
                 </div>
                 <div className='flex flex-col xs:items-center xl:items-end justify-center xs:text-center xl:text-right'>
-                <span className='xs:text-5xl md:text-7xl font-bold'><AnimatedNumbers value={2}/>+</span>
+                <span className='xs:text-5xl md:text-7xl font-bold'><AnimatedNumbers value={3}/>+</span>
                   <h2 className='xs:text-sm md:text-xl capitalize font-medium text-dark/75 dark:text-light'>years of experience</h2>
                 </div>
               </div>
@@ -83,6 +84,7 @@ export default function About() {
           <Skill/>
           <Experience/>
           <Certification/>
+          <Community/>
         </Layout>
       </main>
     </>

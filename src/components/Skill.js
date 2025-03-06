@@ -15,7 +15,7 @@ export const Skill = () => {
             <Skills name='NextJS' x='30vw' y='6vw'/>
             <Skills name='TailwindCSS' x='0vw' y='20vw'/>
             <Skills name='Redux' x='-20vw' y='-15vw'/>
-            <Skills name='HTML5' x='25vw' y='-5vw'/>
+            <Skills name='React Query' x='25vw' y='-5vw'/>
             <Skills name='ExpressJS' x='15vw' y='-17vw'/>
             <Skills name='NodeJS' x='0vw' y='10vw'/>
             <Skills name='Firebase' x='-20vw' y='15vw'/>
